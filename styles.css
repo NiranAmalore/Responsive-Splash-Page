@@ -1,0 +1,141 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin: 0 auto;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 1em;
+}
+
+h2{
+    font-weight: 900;
+    text-shadow: 1px 1px 2px gray;
+    margin-bottom: 0;
+}
+
+p{
+    font-size: 1.5rem;
+    margin: 1em auto;
+    padding: 0 1em;
+    line-height: 1.35;
+    color: grey;
+}
+
+.top-section-container{
+    text-align: center;
+    background-image: url(images/image.jpg);
+    background-size: cover;
+    color: white;
+    width: 100%;
+    min-height: 40vh;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.subheading{
+    color: rgb(255, 115, 0);
+    order: 1;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 1em 1em 0.5em;
+}
+
+.top-text{
+    color: rgb(255, 115, 0);
+    order: -1;
+    text-transform: uppercase;
+    border-top: 5px solid rgb(255, 115, 0);
+    margin-top: 0;
+    font-weight: 900;
+}
+
+.bottom-section-container{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    text-align: center;
+    font-family: inherit;
+    width: 70%;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    padding: 0.45em 0;
+    box-shadow: 1px 1px 2px gray;
+}
+
+button{
+    font-size: 0.75rem;
+    width: 70%;
+    border: none;
+    background-color: rgb(255, 115, 0);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+    padding: 0.75em 0;
+    cursor: pointer;
+}
+
+
+.reduce{
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px rgb(255, 115, 0);
+}
+
+.p-reduce{
+    font-size: 1.25rem;
+}
+
+@media(min-width: 576px){
+    body{
+        display: flex;
+    }
+
+    h1{
+        font-size: 4.5rem;
+    }
+
+    .top-section-container{
+        display: flex;
+        width: 50%;
+        min-width: 50vw;
+        min-height: 100vh;
+    }
+
+    .bottom-section-container{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        min-width: 50vw;
+        min-height: 100vh;
+        justify-content: center;
+        padding: 0 2em;
+    }
+
+    h2{
+        font-size: 2rem;
+        order: -1;
+    }
+
+    .bottom-section-container .subheading{
+        order: 0;
+    }
+}
